@@ -1,0 +1,9 @@
+<h1>Editing profil</h1>
+<%= form_for @profile do |f| %>
+    <% @attributes.each do |attr| %>
+       <%= f.text_field attr.to_sym %>
+    <% end %>
+<% end %>
+
+<%= link_to 'Show', @profil %> |
+<%= link_to 'Back', profils_path %>

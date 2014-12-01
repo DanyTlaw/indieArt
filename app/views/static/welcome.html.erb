@@ -1,0 +1,6 @@
+<h2>Welcome</h2>
+<% if current_user.profil.nil? %>
+	<p>Vielen Dank für ihre anmelden, wenn Sie noch kein profil haben können sie eins <%= link_to "hier", profils_new_path %> erstellen</p>
+<% else %>
+	<p>Willkommen zurueck</p>
+<% end %>
